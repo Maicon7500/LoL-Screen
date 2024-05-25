@@ -7,15 +7,16 @@
   font-family: 'Lexend Deca', sans-serif;
 }
 
-:root{
+:root {
   --white: #FFF;
-  --whistesmoke:#F9F9F9;
-  --light-grey:#ECECEC;
-  --grey:#C4C4C4;
-  --medium-grey:#A7A7A7;
-  --deep-grey:#343434;
-  --black:#000000;
-  --red:#Cf3C3F;
+  --whitesmoke: #F9F9F9;
+  --light-grey: #ECECEC;
+  --grey: #C4C4C4;
+  --medium-grey: #A7A7A7;
+  --deep-grey: #343434;
+  --black: #000000;
+  --blue: #1B77F3;
+  --red: #CF3C3F;
 }
 
 .login{
@@ -65,14 +66,49 @@
   color: var(--medium-grey);
   margin: 20px;
   cursor: text;
+  transition: all 200ms ease;
 }
 
 .input:focus {
-  background: whitesmoke;
+  background: var(--whistesmoke)
   border: 2px solid var(--deep-grey);
 }
 
 .login_label .span-active {
   font-size: 0.7em;
   margin: 8px 10px;
+}
+
+.login_icons {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.login_icons img{
+  width: 20px;
+}
+
+.icons_button {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.login_icons .icons_button:nth-child(1) {
+  background-color: var(--blue);
+}
+
+.login_icons .icons_button:nth-child(2) {
+  background-color: var(--light-grey);
+}
+
+.login_icons .icons_button:nth-child(3) {
+  background-color: var(--black);
 }
